@@ -311,7 +311,7 @@ static void convert_to_ansi(FILE *dump)
     int prev_bg = 0;
     int prev_fg = 0;
 
-    for (chars = 0; chars < 80 * 25; chars++) {
+    for (chars = 0; chars < 80 * 24; chars++) {
         unsigned char character, attribute;
         int fg, bg;
 
