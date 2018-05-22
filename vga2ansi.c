@@ -315,7 +315,7 @@ static void convert_to_ansi(FILE *dump)
         unsigned char character, attribute;
         int fg, bg;
 
-        if (chars % 80 == 0)
+        if (chars > 0 && chars % 80 == 0)
             putchar('\n');
 
         character = fgetc(dump);
